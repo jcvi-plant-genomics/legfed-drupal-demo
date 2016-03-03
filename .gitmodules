@@ -2,5 +2,5 @@
 	path = drupal/sites/all/modules/custom/gateway-dna-drupal
 	url = https://bitbucket.org/mrhanlon/gateway-dna-drupal.git
 [submodule "drupal/sites/all/modules/custom/file-browser-app"]
-	path = drupal/sites/all/modules/custom/file-browser-app
+	path = drupal/sites/all/modules/custom/file_browser
 	url = https://github.com/vivekkrish/file-browser-app-drupal.git
