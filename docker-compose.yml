@@ -1,0 +1,31 @@
+data:
+  image: ubuntu
+  volumes:
+    - /var/lib/mysql
+    - /drupal/sites/default/files
+    - /usr/local/drupal/files
+
+db:
+  image: mysql:5.7
+  ports:
+    - 3306:3306
+  env_file: drupal.env
+  volumes_from:
+    - data
+  volumes:
+    - ./conf/mysql:/etc/mysql/conf.d
+
+drupal:
+  build: .
+  ports:
+    - 80:80
+  links:
+    - db
+  volumes_from:
+    - data
+  volumes:
+    - ./drupal:/drupal
+    - ./logs/drupal:/var/log/drupal
+    - ./logs/supervisor:/var/log/supervisor
+  env_file:
+    - ./drupal.env
