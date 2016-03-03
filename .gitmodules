@@ -4,6 +4,3 @@
 [submodule "drupal/sites/all/modules/custom/file-browser-app"]
 	path = drupal/sites/all/modules/custom/file_browser
 	url = https://github.com/vivekkrish/file-browser-app-drupal.git
-[submodule "drupal/sites/all/modules/custom/iplant-datastore-connect"]
-	path = drupal/sites/all/modules/custom/iplant-datastore-connect
-	url = https://github.com/vivekkrish/iplant_datastore_connect.git
